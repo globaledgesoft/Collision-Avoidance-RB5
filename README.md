@@ -30,7 +30,7 @@ For the setup we will be using the TurtleBot3 Burger, we need to install TurtleB
    rm -r turtlebot3_cartographer turtlebot3_navigation2
    cd ~/turtlebot3_ws/
    ```
- - Sourcing the TurtleBot3 Setup file
+ - Sourcing & Building the TurtleBot3 Setup file
     ```sh
    echo 'source /opt/ros/dashing/setup.bash' >> ~/.bashrc
    source ~/.bashrc
@@ -40,10 +40,6 @@ For the setup we will be using the TurtleBot3 Burger, we need to install TurtleB
    echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
    echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
    source ~/.bashrc
-   ```
- - Building TurtleBOT packages
-   ```sh
-   colcon build
    ```
    
 ## Steps to flash ROS2 firmware into OpenCR 
