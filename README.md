@@ -32,7 +32,14 @@ For the setup we will be using the TurtleBot3 Burger, we need to install TurtleB
    ```
  - Sourcing the TurtleBot3 Setup file
     ```sh
-   source /opt/ros/dashing/setup.bash
+   echo 'source /opt/ros/dashing/setup.bash' >> ~/.bashrc
+   source ~/.bashrc
+   colcon build --symlink-install --parallel-workers 1
+   echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
+   source ~/.bashrc
+   echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
+   echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
+   source ~/.bashrc
    ```
  - Building TurtleBOT packages
    ```sh
