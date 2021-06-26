@@ -19,10 +19,10 @@ For the setup we will be using the TurtleBot3 Burger, we need to install TurtleB
    ```
  - Cloning necessary repositories & accessing TurtleBot Folder
    ```sh
-   git clone -b ros2 https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
-   git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-   git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3.git
-   git clone -b ros2 https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+   git clone -b dashing-devel https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
+   git clone -b dashing-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+   git clone -b dashing-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
+   git clone -b dashing-devel https://github.com/ROBOTIS-GIT/DynamixelSDK.git
    cd ~/turtlebot3_ws/src/turtlebot3
    ```
  - Removing not required folders
